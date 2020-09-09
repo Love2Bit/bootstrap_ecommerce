@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/all.min.css">
+    <style>
+        .rating ul li i{
+            color: orange;
+        }
+        a{
+            color: grey;
+        }
+        a:hover{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        
+        <!-- first header -->
+        
+        <div class="container">
+            <div class="row">
+                <!-- logo -->
+                <div class="col-1">
+                    <img src="asset/images/gs-2.png" alt="logo" width="48" height="48">
+                </div>
+                <!-- search bar -->
+                <div class="col-7">
+                    <form class="form-inline my-2 my-lg-0 w-100">
+                        <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <!-- account -->
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <!-- user icon -->
+                            <div class="col-6">
+                                <span class="float-left px-2">
+                                    
+                                    <i class="fas fa-shopping-cart" style="font-size: 2em; color: grey;"  ></i>
+                                </span>
+                                <span class="float-left px-3">
+                                    
+                                    <i  class="fas fa-user" style="font-size: 2em; color: grey;"></i>
+                                </span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- register -->
+                            <div class="col-6 p-0">
+                                <p class="text-muted m-0">Welcome!</p>
+                                <span>
+                                    <a href="#" class="float-left">Sign in</a>
+                                    <p class="float-left">&nbsp;|&nbsp;</p>
+                                    <a href="#" class="float-left">Register</a>
+                                    <div class="clearfix"></div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second Header -->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">   
+                    
+                    <!-- Navigation Bar -->
+                    
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-bars"></i> Semua Kategori
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Emas 12K</a>
+                                        <a class="dropdown-item" href="#">Emas 13K</a>
+                                        <a class="dropdown-item" href="#">Emas 24K</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Kalung</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Cincin</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Emas</a>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    
+    <!-- Intro Section -->
+    
+    <section id="intro" class="container">
+        <div class="row">
+            <div class="col-12">
+                <img src="asset/images/carousel/portofolio-2.jpg" alt="Intro" class="img-fluid" >
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    
+    <section class="container">
+        
+        <div class="card">
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <i class="fas fa-award fa-3x" style="color:#a49e9ec4"></i>
+                            <h3 class="h5 mt-4">Dijamin Keasliannya</h3>
+                            <p>Ditempat kami emas dijamin kualitas sesuai dengan ISO</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="fas fa-landmark fa-3x" style="color:#a49e9ec4"></i>
+                            <h3 class="h5 mt-4">Tabungan Emas</h3>
+                            <p>Tersedia berbagai jenis tabungan emas dengan jangka waktu tertentu</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="fas fa-lock fa-3x" style="color:#a49e9ec4"></i>
+                            <h3 class="h5 mt-4">Cicil Kredit</h3>
+                            <p>Kami juga menyediakan berbagai macam cicilan kredit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- Populer Section -->
+    
+    <section class="container mt-3">
+        <h3>Produk Terpopuler</h3>
+        <div class="row">
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body  p-2">
+                        <a href="#">Cincin</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body  p-2">
+                        <a href="#">Cincin</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body  p-2">
+                        <a href="#">Cincin</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body p-2">
+                        <a href="#">Cincin</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Arrival Section -->
+    
+    <section class="container mt-3">
+        <h3>Produk Terbaru</h3>
+        <div class="row">
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/cincin-2.jpg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body  p-2">
+                        <a href="#">Cincin</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/cincin-3.jpg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body  p-2">
+                        <a href="#">Cincin</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/cincin-4.jpg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body  p-2">
+                        <a href="#">Cincin</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body p-2">
+                        <a href="#">Cincin</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-danger btn-block" type="button" disabled>Stok Habis</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Recommended Section -->
+    
+    <section class="container mt-3">
+        <h3>Rekomendasi</h3>
+        <div class="row">
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/emas-antam.jpeg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body  p-2">
+                        <a href="#">Emas Antam</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images//kalung-emas-1.jpg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body  p-2">
+                        <a href="#">Kalung</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body  p-2">
+                        <a href="#">Cincin</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 p-1">
+                <div class="card">
+                    <a href="#"><img src="asset/images/kalung-emas-3.PNG" alt="Emas" class="img-fluid"></a>
+                    <div class="card-body p-2">
+                        <a href="#">Kalung 24K</a>
+                        <div class="rating mt-3">
+                            <ul class="list-inline float-left">
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                            </ul>
+                            <span class="pl-3 text-muted">34 Terjual</span>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="harga">
+                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Partner Section -->
+    
+    <section class="container mt-3">
+        <h3>Mitra Kami</h3>
+        <div class="row">
+            <div class="col-2">
+                <figure class="figure">
+                    <img src="asset/images/brand/antam.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
+                    <figcaption class="figure-caption text-center text-uppercase">Antam</figcaption>
+                </figure>
+            </div>
+            <div class="col-2">
+                <figure class="figure">
+                    <img src="asset/images/brand/bukalapak.jpg " class="figure-img img-thumbnail rounded" alt="Antam">
+                    <figcaption class="figure-caption text-center text-uppercase">Bukalapak</figcaption>
+                </figure>
+            </div>
+            <div class="col-2">
+                <figure class="figure">
+                    <img src="asset/images/brand/buccelati.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
+                    <figcaption class="figure-caption text-center text-uppercase">Buccelati</figcaption>
+                </figure>
+            </div>
+            <div class="col-2">
+                <figure class="figure">
+                    <img src="asset/images/brand/pegadaian.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
+                    <figcaption class="figure-caption text-center text-uppercase">Pegadaian</figcaption>
+                </figure>
+            </div>
+            <div class="col-2">
+                <figure class="figure">
+                    <img src="asset/images/brand/ubs.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
+                    <figcaption class="figure-caption text-center text-uppercase">Ubs</figcaption>
+                </figure>
+            </div>
+            <div class="col-2">
+                <figure class="figure">
+                    <img src="asset/images/brand/pump.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
+                    <figcaption class="figure-caption text-center text-uppercase">Pump</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Section -->
+
+    <section class="container-fluid mt-3 p-5 bg-light">
+        <h3>Download Aplikasi</h3>
+        <div class="row">
+            <div class="col-12 ">
+                <a href="#"><img src="asset/images/googleplay.jpg" alt="Google" height="40"></a>
+                <a href="#"><img src="asset/images/appstore.png" alt="Google" height="40"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section class="container mt-3">
+        <div class="row">
+            <div class="col-3">
+                <h5>Perusahaan</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Tentang kami</a></li>
+                    <li><a href="#">Karir</a></li>
+                    <li><a href="#">Syarat &amp; Ketentuan</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h5>Bantuan</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#">Klaim Asuransi</a></li>
+                    <li><a href="#">Info Kredit</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h5>Akun</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Akun Pengguna</a></li>
+                    <li><a href="#">Daftar</a></li>
+                    <li><a href="#">Pengatuan Akun</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h5>Sosial Media</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#"><i class="fab fa-facebook text-dark"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter text-dark"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram text-dark"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-youtube text-dark"></i> Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-3">
+
+        <div class="row">
+            <div class="col-2">
+                <p>&copy; 2020 Toko Emas</p>
+            </div>
+
+            <div class="col-8">
+                <ul class="list-inline list-unstyled">
+                    <li class="list-inline-item">info@tokoemas.com</li>
+                    <li class="list-inline-item">+6281233323</li>
+                    <li class="list-inline-item">Green Lake City M 59, Cipondoh, Tangerang</li>
+                </ul>
+            </div>
+
+            <div class="col-2">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-mastercard"></i>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <!-- <script src="asset/js/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="asset/js/jquery-3.5.1.full.js"></script>
+    <script src="asset/js/popper.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+</body>
+</html>
