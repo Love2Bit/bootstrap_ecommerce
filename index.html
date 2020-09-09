@@ -19,8 +19,17 @@
         }
 
         @media (max-width: 575.98px){
+            #search{
+                margin-right: 4px;
+            }
             
         }
+
+        @media (max-width: 991.98px) {
+            #search input{
+                width: 90%;
+            }
+         }
     </style>
 </head>
 <body>
@@ -32,22 +41,22 @@
         <div class="container">
             <div class="row">
                 <!-- logo -->
-                <div class="col-1">
+                <div class="col-3 col-md-1 col-sm-4 col-lg-1 mt-2">
                     <img src="asset/images/gs-2.png" alt="logo" width="48" height="48">
                 </div>
                 <!-- search bar -->
-                <div class="col-7">
-                    <form class="form-inline my-2 my-lg-0 w-100">
-                        <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search">
+                <div id="search" class="col-8 col-md-11 col-sm-8 col-lg-7">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
                 <!-- account -->
-                <div class="col-4">
+                <div class="col-12 col-sm-12 col-lg-4">
                     <div class="container">
                         <div class="row">
                             <!-- user icon -->
-                            <div class="col-6">
+                            <div class="col-6 col-md-9 col-lg-6 p-3">
                                 <span class="float-left px-2">
                                     
                                     <i class="fas fa-shopping-cart" style="font-size: 2em; color: grey;"  ></i>
@@ -59,7 +68,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <!-- register -->
-                            <div class="col-6 p-0">
+                            <div class="col-6 col-md-3 p-0">
                                 <p class="text-muted m-0">Welcome!</p>
                                 <span>
                                     <a href="#" class="float-left">Sign in</a>
@@ -168,7 +177,7 @@
     <section class="container mt-3">
         <h3>Produk Terpopuler</h3>
         <div class="row">
-            <div class="col-3 p-1">
+            <div class="col-12 p-1 col-sm-6 col-md-6 col-lg-3">
                 <div class="card">
                     <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
@@ -192,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 p-1">
+            <div class="col-12 p-1 col-sm-6 col-md-6 col-lg-3">
                 <div class="card">
                     <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
@@ -216,7 +225,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 p-1">
+            <div class="col-12 p-1 col-sm-6 col-md-6 col-lg-3">
                 <div class="card">
                     <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
@@ -240,7 +249,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 p-1">
+            <div class="col-12 p-1 col-sm-6 col-md-6 col-lg-3">
                 <div class="card">
                     <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body p-2">
