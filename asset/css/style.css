@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: ease-in 0.2s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #28A745;
+}
+
+.rating ul li i{
+  color: orange;
+}
+
+.btn-danger {
+  cursor: not-allowed;
+}
+
+.dropdown-item {
+  transition: ease-in-out .2s;
+}
+
+.dropdown-item:hover {
+  color: #28A745;
+  font-weight: 600;
+}

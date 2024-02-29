@@ -6,87 +6,51 @@
     <title>E-Commerce</title>
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/all.min.css">
-    <style>
-        .rating ul li i{
-            color: orange;
-        }
-        a{
-            color: grey;
-        }
-        a:hover{
-            text-decoration: none;
-            color: black;
-        }
-
-        @media (max-width: 575.98px){
-            #search{
-                margin-right: 4px;
-            }
-            
-        }
-
-        @media (max-width: 991.98px) {
-            #search input{
-                width: 90%;
-            }
-        }
-        @media (max-width: 1280.720px) {
-            #search input{
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
     <!-- header section -->
     <header>
         
         <!-- first header -->
-        
         <div class="container">
             <div class="row">
                 <!-- logo -->
-                <div class="col-3 col-md-1 col-sm-4 col-lg-1 mt-2">
-                    <img src="asset/images/gs-2.png" alt="logo" width="48" height="48">
+                <div class="col-3 col-md-1 col-sm-4 mt-2">
+                    <img src="asset/images/gs-2.png" alt="logo" width="40" height="40">
                 </div>
                 <!-- search bar -->
-                <div id="search" class="col-8 col-md-11 col-sm-8 col-lg-7">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                <div id="search" class="col-9 col-md-7 col-sm-5 mt-2">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <!-- account -->
-                <div class="col-12 col-sm-12 col-lg-4">
-                    <div class="container">
-                        <div class="row">
-                            <!-- user icon -->
-                            <div class="col-6 col-md-9 col-lg-6 p-3">
-                                <span class="float-left px-2">
-                                    
-                                    <i class="fas fa-shopping-cart" style="font-size: 2em; color: grey;"  ></i>
-                                </span>
-                                <span class="float-left px-3">
-                                    
-                                    <i  class="fas fa-user" style="font-size: 2em; color: grey;"></i>
-                                </span>
-                                <div class="clearfix"></div>
-                            </div>
-                            <!-- register -->
-                            <div class="col-6 col-md-3 p-0">
-                                <p class="text-muted m-0">Welcome!</p>
-                                <span>
-                                    <a href="#" class="float-left">Sign in</a>
-                                    <p class="float-left">&nbsp;|&nbsp;</p>
-                                    <a href="#" class="float-left">Register</a>
-                                    <div class="clearfix"></div>
-                                </span>
+                <div class="col-md-4 col-sm-3 text-right mt-2">
+                    <div class="dropdown">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <a class="btn" href="#">
+                                <i class="fas fa-shopping-cart" style="font-size: 2em; color: grey;"></i>
+                            </a>
+        
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user" style="font-size: 2em; color: grey;"></i>
+                            </a>
+                
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Sign In</a>
+                                <a class="dropdown-item" href="#">Register</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         
         <!-- Second Header -->
         
@@ -154,18 +118,18 @@
         <div class="card">
             <div class="card-body">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-8 col-md-2 col-lg-12">
-                            <i class="fas fa-award fa-3x" style="color:#a49e9ec4"></i>
+                    <div class="row text-center ">
+                        <div class="col-12 col-md-4">
+                            <i class="fas fa-award fa-3x " style="color:#a49e9ec4"></i>
                             <h3 class="h5 mt-4">Dijamin Keasliannya</h3>
                             <p>Ditempat kami emas dijamin kualitas sesuai dengan ISO</p>
                         </div>
-                        <div class="col-12 col-md-8 col-lg-12">
+                        <div class="col-12 col-md-4">
                             <i class="fas fa-landmark fa-3x" style="color:#a49e9ec4"></i>
                             <h3 class="h5 mt-4">Tabungan Emas</h3>
                             <p>Tersedia berbagai jenis tabungan emas dengan jangka waktu tertentu</p>
                         </div>
-                        <div class="col-12 col-md-2 col-lg-12">
+                        <div class="col-12 col-md-4">
                             <i class="fas fa-lock fa-3x" style="color:#a49e9ec4"></i>
                             <h3 class="h5 mt-4">Cicil Kredit</h3>
                             <p>Kami juga menyediakan berbagai macam cicilan kredit</p>
@@ -173,7 +137,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         
     </section>
     
@@ -200,7 +164,7 @@
                         </div>
                         
                         <div class="harga">
-                            <button type="button" class="btn btn-outline-dark btn-block border-0" disabled>Rp.800.000</button>
+                            <button type="button" class="btn btn-outline-dark btn-block border-0 " disabled>Rp.800.000</button>
                             <button class="btn btn-secondary btn-block" type="button">Beli</button>
                         </div>
                     </div>
@@ -283,10 +247,10 @@
     
     <!-- Arrival Section -->
     
-    <section class="container mt-3">
+    <section class="container mt-3 produk-baru">
         <h3>Produk Terbaru</h3>
         <div class="row">
-            <div class="col-3 p-1">
+            <div class="col-6 col-sm-3 p-1">
                 <div class="card">
                     <a href="#"><img src="asset/images/cincin-2.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
@@ -310,7 +274,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 p-1">
+            <div class="col-6 col-sm-3 p-1">
                 <div class="card">
                     <a href="#"><img src="asset/images/cincin-3.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
@@ -334,7 +298,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 p-1">
+            <div class="col-6 col-sm-3 p-1">
                 <div class="card">
                     <a href="#"><img src="asset/images/cincin-4.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
@@ -358,7 +322,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 p-1">
+            <div class="col-6 col-sm-3 p-1">
                 <div class="card">
                     <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body p-2">
@@ -390,7 +354,7 @@
     <section class="container mt-3">
         <h3>Rekomendasi</h3>
         <div class="row">
-            <div class="col-3 p-1">
+            <div class="col-6 col-sm-3 p-1">
                 <div class="card">
                     <a href="#"><img src="asset/images/emas-antam.jpeg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
@@ -414,7 +378,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 p-1">
+            <div class="col-6 col-sm-3 p-1">
                 <div class="card">
                     <a href="#"><img src="asset/images//kalung-emas-1.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
@@ -438,7 +402,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 p-1">
+            <div class="col-6 col-sm-3 p-1">
                 <div class="card">
                     <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
@@ -462,7 +426,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 p-1">
+            <div class="col-6 col-sm-3 p-1">
                 <div class="card">
                     <a href="#"><img src="asset/images/kalung-emas-3.PNG" alt="Emas" class="img-fluid"></a>
                     <div class="card-body p-2">
@@ -494,37 +458,37 @@
     <section class="container mt-3">
         <h3>Mitra Kami</h3>
         <div class="row">
-            <div class="col-2">
+            <div class="col-6 col-sm-2">
                 <figure class="figure">
                     <img src="asset/images/brand/antam.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
                     <figcaption class="figure-caption text-center text-uppercase">Antam</figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-sm-2">
                 <figure class="figure">
                     <img src="asset/images/brand/bukalapak.jpg " class="figure-img img-thumbnail rounded" alt="Antam">
                     <figcaption class="figure-caption text-center text-uppercase">Bukalapak</figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-sm-2">
                 <figure class="figure">
                     <img src="asset/images/brand/buccelati.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
                     <figcaption class="figure-caption text-center text-uppercase">Buccelati</figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-sm-2">
                 <figure class="figure">
                     <img src="asset/images/brand/pegadaian.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
                     <figcaption class="figure-caption text-center text-uppercase">Pegadaian</figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-sm-2">
                 <figure class="figure">
                     <img src="asset/images/brand/ubs.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
                     <figcaption class="figure-caption text-center text-uppercase">Ubs</figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-sm-2">
                 <figure class="figure">
                     <img src="asset/images/brand/pump.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
                     <figcaption class="figure-caption text-center text-uppercase">Pump</figcaption>
@@ -549,15 +513,15 @@
 
     <section class="container mt-3">
         <div class="row">
-            <div class="col-3">
-                <h5>Perusahaan</h5>
+            <div class="col-6 col-sm-3">
+                <h5 >Perusahaan</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Tentang kami</a></li>
                     <li><a href="#">Karir</a></li>
                     <li><a href="#">Syarat &amp; Ketentuan</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-3">
                 <h5>Bantuan</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Kontak</a></li>
@@ -565,7 +529,7 @@
                     <li><a href="#">Info Kredit</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-3">
                 <h5>Akun</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Akun Pengguna</a></li>
@@ -573,7 +537,7 @@
                     <li><a href="#">Pengatuan Akun</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-3">
                 <h5>Sosial Media</h5>
                 <ul class="list-unstyled">
                     <li><a href="#"><i class="fab fa-facebook text-dark"></i> Facebook</a></li>
