@@ -16,3 +16,7 @@ $(document).ready(function(){
   checkWindowSize();
   $(window).resize(checkWindowSize);
 });
+
+window.addEventListener('load', function() {
+  ubahMarginLeft();
+});

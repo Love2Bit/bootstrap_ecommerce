@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce</title>
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
-    <link rel="stylesheet" href="asset/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.2/css/all.min.css" integrity="sha512-g0gRzvKX9GBUbjlJZ02n2GLRJVabgLm6b3oypbkF6ne1T2+ZHCucKRd8qt31a3BCGahAlBmXUDS7lu2pYuWB7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
@@ -13,37 +13,42 @@
     <header>
         <!-- first header -->
         <div class="container">
-            <div class="row">
-                <!-- logo -->
-                <div class="col-3 col-md-1 col-sm-4 mt-2">
-                    <img src="asset/images/gs-2.png" alt="logo" width="40" height="40">
-                </div>
-                <!-- search bar and burger icon -->
-                <div id="search" class="col-9 col-md-7 col-sm-5 mt-2 d-flex align-items-center">
-                    <form class="form-inline">
-                        <div class="input-group">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
-                            </div>
+            <div class="row align-items-center">
+                <!-- logo and search bar -->
+                <div class="col-sm-8">
+                    <div class="d-flex align-items-center mt-2">
+                        <div class="col-2 col-md-1 col-sm-2 mr-2">
+                            <img src="asset/images/gs-2.png" alt="logo" width="40" height="40">
                         </div>
-                    </form>
-                    <button class="navbar-toggler navbar-light ml-auto" id="navbarSecond" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                        <div id="search" class="col-8 col-md-7 col-sm-12 ml-sm-4 mt-2">
+                            <form class="form-inline">
+                                <div class="input-group">
+                                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- navbarSecond -->
+                        <div class="col-sm-4 text-right mt-2" id="navbarSecond">
+                            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
+                
                 <!-- account -->
-                <div class="col-md-4 col-sm-3 text-right mt-2" id="firstDropdown">
+                <div class="col-md-4 col-sm-4 text-right mt-3 d-none d-md-block">
                     <div class="dropdown">
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                             <a class="btn" href="#">
                                 <i class="fas fa-shopping-cart" style="font-size: 2em; color: grey;"></i>
                             </a>
-    
                             <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user" style="font-size: 2em; color: grey;"></i>
                             </a>
-                
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
                                 <a class="dropdown-item" href="#">Sign In</a>
                                 <a class="dropdown-item" href="#">Register</a>
@@ -178,9 +183,9 @@
             </div>
             <div class="col-12 p-1 col-sm-6 col-md-6 col-lg-3">
                 <div class="card">
-                    <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
+                    <a href="#"><img src="asset/images/earpiece.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
-                        <a href="#">Cincin</a>
+                        <a href="#">White Gold Earpiece</a>
                         <div class="rating mt-3">
                             <ul class="list-inline float-left">
                                 <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
@@ -202,9 +207,9 @@
             </div>
             <div class="col-12 p-1 col-sm-6 col-md-6 col-lg-3">
                 <div class="card">
-                    <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
+                    <a href="#"><img src="asset/images/cincin-6.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body  p-2">
-                        <a href="#">Cincin</a>
+                        <a href="#">Cincin Titanium</a>
                         <div class="rating mt-3">
                             <ul class="list-inline float-left">
                                 <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
@@ -226,9 +231,9 @@
             </div>
             <div class="col-12 p-1 col-sm-6 col-md-6 col-lg-3">
                 <div class="card">
-                    <a href="#"><img src="asset/images/cincin-1.jpg" alt="Emas" class="img-fluid"></a>
+                    <a href="#"><img src="asset/images/cincin-7.jpg" alt="Emas" class="img-fluid"></a>
                     <div class="card-body p-2">
-                        <a href="#">Cincin</a>
+                        <a href="#">Cincin Violita</a>
                         <div class="rating mt-3">
                             <ul class="list-inline float-left">
                                 <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
@@ -434,7 +439,7 @@
             </div>
             <div class="col-6 col-sm-3 p-1">
                 <div class="card">
-                    <a href="#"><img src="asset/images/kalung-emas-3.PNG" alt="Emas" class="img-fluid"></a>
+                    <a href="#"><img src="asset/images/kalung-emas-3.PNG" alt="Emas" class="img-fluid" style="width: 100%;"></a>
                     <div class="card-body p-2">
                         <a href="#">Kalung 24K</a>
                         <div class="rating mt-3">
@@ -459,58 +464,16 @@
         </div>
     </section>
     
-    <!-- Partner Section -->
-    
-    <section class="container mt-3">
-        <h3>Mitra Kami</h3>
-        <div class="row">
-            <div class="col-6 col-sm-2">
-                <figure class="figure">
-                    <img src="asset/images/brand/antam.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
-                    <figcaption class="figure-caption text-center text-uppercase">Antam</figcaption>
-                </figure>
-            </div>
-            <div class="col-6 col-sm-2">
-                <figure class="figure">
-                    <img src="asset/images/brand/bukalapak.jpg " class="figure-img img-thumbnail rounded" alt="Antam">
-                    <figcaption class="figure-caption text-center text-uppercase">Bukalapak</figcaption>
-                </figure>
-            </div>
-            <div class="col-6 col-sm-2">
-                <figure class="figure">
-                    <img src="asset/images/brand/buccelati.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
-                    <figcaption class="figure-caption text-center text-uppercase">Buccelati</figcaption>
-                </figure>
-            </div>
-            <div class="col-6 col-sm-2">
-                <figure class="figure">
-                    <img src="asset/images/brand/pegadaian.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
-                    <figcaption class="figure-caption text-center text-uppercase">Pegadaian</figcaption>
-                </figure>
-            </div>
-            <div class="col-6 col-sm-2">
-                <figure class="figure">
-                    <img src="asset/images/brand/ubs.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
-                    <figcaption class="figure-caption text-center text-uppercase">Ubs</figcaption>
-                </figure>
-            </div>
-            <div class="col-6 col-sm-2">
-                <figure class="figure">
-                    <img src="asset/images/brand/pump.jpg" class="figure-img img-thumbnail rounded" alt="Antam">
-                    <figcaption class="figure-caption text-center text-uppercase">Pump</figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
-
     <!-- App Section -->
 
     <section class="container-fluid mt-3 p-5 bg-light">
-        <h3>Download Aplikasi</h3>
-        <div class="row">
-            <div class="col-12 ">
-                <a href="#"><img src="asset/images/googleplay.jpg" alt="Google" height="40"></a>
-                <a href="#"><img src="asset/images/appstore.png" alt="Google" height="40"></a>
+        <div class="ml-md-5 ml-sm-2">
+            <h3>Download Aplikasi</h3>
+            <div class="row">
+                <div class="col-12 ">
+                    <a href="#"><img src="asset/images/googleplay.jpg" alt="Google" height="40"></a>
+                    <a href="#"><img src="asset/images/appstore.png" alt="Google" height="40"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -578,12 +541,11 @@
         </div>
     </section>
 
-    
-    
-    <!-- <script src="asset/js/jquery-3.5.1.slim.min.js"></script> -->
-    <script src="asset/js/jquery-3.5.1.full.js"></script>
-    <script src="asset/js/popper.min.js"></script>
-    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.2/js/all.min.js" integrity="sha512-+e0KSTWAD/BlzmKXfdpTZzWram63eaW8RPLQkuQqRkH4tzjxLS2qIEXRvi6PAmdAfGJkNVf2poOEQip2ix9bfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="asset/js/check_size.js"></script>
 </body>
 </html>
