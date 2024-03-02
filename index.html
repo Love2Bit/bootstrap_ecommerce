@@ -11,7 +11,6 @@
 <body>
     <!-- header section -->
     <header>
-        
         <!-- first header -->
         <div class="container">
             <div class="row">
@@ -19,8 +18,8 @@
                 <div class="col-3 col-md-1 col-sm-4 mt-2">
                     <img src="asset/images/gs-2.png" alt="logo" width="40" height="40">
                 </div>
-                <!-- search bar -->
-                <div id="search" class="col-9 col-md-7 col-sm-5 mt-2">
+                <!-- search bar and burger icon -->
+                <div id="search" class="col-9 col-md-7 col-sm-5 mt-2 d-flex align-items-center">
                     <form class="form-inline">
                         <div class="input-group">
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -29,15 +28,18 @@
                             </div>
                         </div>
                     </form>
+                    <button class="navbar-toggler navbar-light ml-auto" id="navbarSecond" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
                 <!-- account -->
-                <div class="col-md-4 col-sm-3 text-right mt-2">
+                <div class="col-md-4 col-sm-3 text-right mt-2" id="firstDropdown">
                     <div class="dropdown">
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                             <a class="btn" href="#">
                                 <i class="fas fa-shopping-cart" style="font-size: 2em; color: grey;"></i>
                             </a>
-        
+    
                             <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user" style="font-size: 2em; color: grey;"></i>
                             </a>
@@ -57,20 +59,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">   
-                    
                     <!-- Navigation Bar -->
-                    
                     <nav class="navbar navbar-expand-lg navbar-light ">
-                        
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-bars d-none d-sm-inline"></i> Semua Kategori
+                                        <i class="fas fa-bars d-none d-sm-inline "></i> Semua Kategori
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#">Emas 12K</a>
@@ -90,15 +85,26 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Emas</a>
                                 </li>
-                                
+                                <li class="nav-item dropdown" id="secondDropdown">
+                                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                        <a class="btn" href="#">
+                                            <i class="fas fa-shopping-cart" style="font-size: 2em; color: grey;"></i>
+                                        </a>
+                                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-user" style="font-size: 2em; color: grey;"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Sign In</a>
+                                            <a class="dropdown-item" href="#">Register</a>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
-                            
                         </div>
                     </nav>
                 </div>
             </div>
-        </div>
-        
+        </div>        
     </header>
     
     <!-- Intro Section -->
@@ -578,5 +584,6 @@
     <script src="asset/js/jquery-3.5.1.full.js"></script>
     <script src="asset/js/popper.min.js"></script>
     <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/check_size.js"></script>
 </body>
 </html>
