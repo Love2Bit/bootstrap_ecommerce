@@ -17,8 +17,8 @@ a:hover {
   color: #28A745;
 }
 
-.rating ul li i{
-  color: orange;
+.fa-star {
+  color: #FFC107;
 }
 
 .btn-danger {
